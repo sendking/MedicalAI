@@ -20,8 +20,8 @@ const provider = await stub(async (_hit, request) => {
   }
   const content = step === "prefilter" ? { label: "PASS", reason: "local fixture" }
     : step === "score" ? { attentionScore: SELECTING_SCORE }
-    : step === "structure" ? { category: "ai-models", tags: [], subjects: [], scope: "single", fact: null }
-    : { itemType: "model_release", authorRole: "principal", tags: ["模型发布"], editorialJudgment: "模型能力提升", titleZh: "实验室发布新模型", summaryZh: "实验室发布新模型，并公布了评测结果与价格。" };
+    : step === "structure" ? { category: "drug-approval", tags: [], subjects: [], scope: "single", fact: null }
+    : { itemType: "drug_approval", authorRole: "principal", tags: ["新药获批"], editorialJudgment: "有明确的临床获益", titleZh: "某药企公布 III 期结果", summaryZh: "某药企公布 III 期结果，并报告了主要终点与安全性数据。" };
   return { choices: [{ message: { content: JSON.stringify(content) } }] };
 });
 pointModels(provider.url);
@@ -31,8 +31,8 @@ before(async () => {
 });
 after(async () => { await stopBoss(); await provider.close(); await closeDb(); });
 
-const material = (name: string) => ({ sourceId, url: `https://example.org/${sourceId}/${name}`, title: `A lab releases a model ${name}`,
-  bodyText: `A lab released a model ${name}. ` + "The release includes benchmark results and pricing details. ".repeat(12),
+const material = (name: string) => ({ sourceId, url: `https://example.org/${sourceId}/${name}`, title: `A company reports phase 3 results ${name}`,
+  bodyText: `A company reported phase 3 results ${name}. ` + "The trial includes efficacy and safety results. ".repeat(12),
   bodyStatus: "ok" as const, via: "fetch" as const, publishedAt: new Date() });
 
 test("a late successful analysis preserves newer input awaiting processing", async () => {
@@ -43,7 +43,7 @@ test("a late successful analysis preserves newer input awaiting processing", asy
   const pending = processArticle(articleId);
   await waiting.entered.promise;
   try {
-    const revised = await upsertMaterial({ ...input, title: "The lab corrects the release", bodyText: "Corrected benchmark and pricing details. ".repeat(12) });
+    const revised = await upsertMaterial({ ...input, title: "The company corrects the trial report", bodyText: "Corrected efficacy and safety results. ".repeat(12) });
     assert.equal(revised.revised, true);
   } finally {
     hold = null;

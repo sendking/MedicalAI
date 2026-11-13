@@ -3,6 +3,7 @@ import type { PoolResponse, TimelineFilters } from "@aihot/contracts/site";
 import { beijingDate, beijingMidnight } from "@aihot/contracts/time";
 import { one, sql, withCustomPlans, type Db } from "../db.ts";
 import { cachedByKey, sharedSearch } from "../lib/cache.ts";
+import { entityIdentity } from "../editorial/vocabulary.ts";
 import {
   categoryCondition, channelCondition, ITEM_COLUMNS, ITEM_FROM, seatHolders, tagCondition, toFeedItemSummary,
   type ItemRow,
@@ -86,7 +87,10 @@ function queryEntityTag(q: string): string | null {
   const want = normalizeAlias(q);
   if (!want) return null;
   const topic = TOPICS.find((t) => t.entityId && t.aliases.some((a) => normalizeAlias(a) === want));
-  return topic ? `entity:${topic.entityId}` : null;
+  if (topic) return `entity:${topic.entityId}`;
+  // A name the vocabulary knows without a topic of its own ("BeOne") still names that company.
+  const entity = entityIdentity(q);
+  return entity ? `entity:${entity}` : null;
 }
 
 /**

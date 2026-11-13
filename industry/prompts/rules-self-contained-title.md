@@ -1,12 +1,13 @@
 
 【标题自洽规则 — 让读者不点开就知道"这是关于谁的什么事"】
 
-1. 标题必须点出核心主体：模型名 / 产品名 / 公司名 / 项目名。
+1. 标题必须点出核心主体：药品名（通用名或商品名）/ 靶点 / 适应症 / 公司名 / 试验编号 / 监管机构。
 2. 原标题已经清楚点出主体的：英文标题翻译成中文、中文标题保持原意，不要为改写而改写。
-3. 原标题只是版本号 / 代号 / 没信息量的 teaser（如 "v2.1.159"、"Small is a feature"、"Day 1"、"重磅发布"）时，结合【来源】和正文把主体补进标题。例：原标题 "v2.1.159" + 来源 "Claude Code：GitHub Releases" → "Claude Code v2.1.159 发布"。
-4. 补主体只能用【来源】或正文里真实出现的名字。正文和来源都没点出具体型号时，用上位词（如"开源多模态模型"）兜底，绝不凭"行业常识"编一个具体型号 / 版本 / 数字。
-5. 原标题表达的【文章类型和核心动作】是硬边界：How / Why / Guide / Analysis / Review / Benchmark 这类解释、分析、教程或评测标题，中文标题必须保留这个类型；不能因为正文谈到一个已经存在的模型、产品或新数据，就改写成“发布 / 推出 / 上线 / 开源”。只有原标题明确宣布了发布、推出、上线或开源，中文标题才能使用对应动作。保留文章类型不等于删主体：仍须按第 1-4 条补全正文或来源明确给出的公司、产品、项目名。
-   例：原标题 "How GPT-5.6 fuses frontier intelligence with frontier efficiency" → "GPT-5.6 如何兼顾前沿智能与效率"，不能写成 "OpenAI 发布 GPT-5.6"。
-   例：原标题 "How to build interactive experiences with canvases" + 来源和正文明确是 GitHub Copilot → "GitHub Copilot 如何用 canvases 构建交互体验"，不能只写成缺主体的 "如何用 canvases 构建交互体验"。
-6. 本条的动作和背景里的旧发布要分清：原文把发布写成过去的事（“At DevDay, we introduced …”“Last week we launched …”“上周我们发布了…”），本条是在讲用法、做演示或再次推广时，标题写介绍、演示或讲解，把发布交代成此前的事；不能写成“推出 / 发布 / 上线”，否则读者会当成今天的新闻。只有原文明确某项能力是现在才开放或新增，才对那一项用对应动作。
-   例：正文 "At DevDay, we introduced ChatGPT Space … See how it works below" → "OpenAI 演示 DevDay 发布的 ChatGPT Space 团队协作用法"，不能写成 "OpenAI 在 DevDay 推出 ChatGPT Space"。
+3. 原标题只是版本号、代号或没信息量的 teaser（如 "Topline results"、"Breaking news"、"重磅"、"III 期成功"）时，结合【来源】和正文把主体补进标题。例：原标题 "Topline results" + 来源 "AstraZeneca" + 正文提到 Tagrisso → "阿斯利康公布奥希替尼 III 期顶线结果"。
+4. 补主体只能用【来源】或正文里真实出现的名字。正文和来源都没点出具体药品或适应症时，用上位词（如"一款 GLP-1 候选药物"）兜底，绝不凭"行业常识"编一个具体药品名、靶点、试验编号或数字。
+5. 原标题表达的【文章类型和核心动作】是硬边界：How / Why / Guide / Analysis / Review / Trial results / Approval 这类解释、分析、解读、数据读出或获批标题，中文标题必须保留这个类型；不能因为正文谈到一个已经上市的药品或新数据，就改写成“获批 / 上市 / 推出”。只有原标题明确宣布了获批、受理或上市，中文标题才能使用对应动作。保留文章类型不等于删主体：仍须按第 1-4 条补全正文或来源明确给出的药品、公司、适应症或试验编号。
+   例：原标题 "How GLP-1 drugs are reshaping cardiology" → "GLP-1 药物正在如何改变心血管治疗"，不能写成 "诺和诺德获批新适应症"。
+   例：原标题 "What the new NMPA guidance means for cell therapy" + 正文明确是国家药监局指导原则 → "国家药监局细胞治疗指导原则意味着什么"，不能只写成缺主体的 "新指导原则意味着什么"。
+6. 本条的动作和背景里的旧获批要分清：原文把获批写成过去的事（“去年获批”“此前已在国内上市”），本条是在讲用药、市场或解读时，标题写解读或进展，把获批交代成此前的事；不能写成“获批 / 上市 / 推出”，否则读者会当成今天的新闻。只有原文明确某个适应症是现在才获批或新增，才对那一项用对应动作。
+   例：正文 "The drug was approved in China last year. Here is how hospitals are using it" → "一款去年在华获批的药物，医院正在怎么用"，不能写成 "该药在华获批"。
+7. 疗效和安全性表述不能替原文升级：原文写 "met the primary endpoint" 就写“达到主要终点”，不写“显著优于标准治疗”；原文写 "numerical improvement" 就写“数值上改善”，不写“显著有效”；原文写 "well tolerated" 就写“耐受性良好”，不写“安全无副作用”。

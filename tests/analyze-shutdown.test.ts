@@ -32,10 +32,10 @@ const provider = await stub(async (_hit, request) => {
   }
   if (step === "structure" && count === 1) { active.structureAsked.open(); await active.structureAnswer.promise; }
   if (step === "understand" && active.writingAnswer) { active.writingAsked!.open(); await active.writingAnswer.promise; }
-  const content = step === "prefilter" ? { label: "PASS", reason: "AI model release" }
+  const content = step === "prefilter" ? { label: "PASS", reason: "pharma approval" }
     : step === "score" ? { attentionScore: SELECTING_SCORE }
-      : step === "structure" ? { category: "ai-models", tags: ["模型发布"], subjects: [], fact: { title: "新模型发布" } }
-        : { itemType: "model_release", authorRole: "principal", tags: ["模型发布"], editorialJudgment: "模型有明确的能力提升", titleZh: `新模型发布 ${T}`, summaryZh: "模型发布并提供了评测和价格。" };
+      : step === "structure" ? { category: "drug-approval", tags: ["新药获批"], subjects: [], fact: { title: "新药获批" } }
+        : { itemType: "drug_approval", authorRole: "principal", tags: ["新药获批"], editorialJudgment: "有明确的临床获益", titleZh: `新药获批 ${T}`, summaryZh: "该药获批，并公布了 III 期数据。" };
   return { id: `stub-${active.calls.length}`, choices: [{ message: { content: JSON.stringify(content) } }], usage: { prompt_tokens: 10, completion_tokens: 10, total_tokens: 20 } };
 });
 const children = new Set<ReturnType<typeof spawn>>();

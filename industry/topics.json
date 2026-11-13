@@ -2,328 +2,407 @@
   "groups": [
     {
       "key": "company",
-      "name": "公司与模型",
-      "blurb": "按厂商追踪模型、产品与公司动态"
+      "name": "企业与机构",
+      "blurb": "按药企与监管机构追踪审批、临床与商业动态"
     },
     {
       "key": "field",
-      "name": "技术方向",
-      "blurb": "按技术领域深挖：Agent、多模态、具身智能……"
+      "name": "治疗领域",
+      "blurb": "按疾病领域与技术路线深挖：肿瘤、自免、GLP-1、ADC……"
     },
     {
       "key": "genre",
       "name": "内容类型",
-      "blurb": "按体裁浏览：论文、教程、观点、政策……"
+      "blurb": "按体裁浏览：新药获批、临床结果、政策医保、观点……"
     }
   ],
   "topics": [
     {
-      "slug": "openai",
-      "name": "OpenAI / ChatGPT",
+      "slug": "hengrui",
+      "name": "恒瑞医药",
       "group": "company",
-      "entityId": "openai",
-      "definition": "OpenAI 的 GPT 系列模型、ChatGPT 与 Sora 产品更新，以及公司战略与人事变化。"
+      "entityId": "hengrui",
+      "definition": "恒瑞医药的管线进展、创新药获批与出海授权，以及集采背景下的业绩变化。"
     },
     {
-      "slug": "anthropic",
-      "name": "Anthropic / Claude",
+      "slug": "beigene",
+      "name": "百济神州",
       "group": "company",
-      "entityId": "anthropic",
-      "definition": "Anthropic 的 Claude 系列模型、Claude Code 更新，以及安全研究与公司动向。"
+      "entityId": "beigene",
+      "aliases": ["BeiGene", "BeOne Medicines"],
+      "definition": "百济神州的泽布替尼、替雷利珠单抗等核心产品的全球临床与销售进展，以及公司盈亏变化。"
     },
     {
-      "slug": "google",
-      "name": "Google / Gemini",
+      "slug": "innovent",
+      "name": "信达生物",
       "group": "company",
-      "entityId": "google",
-      "aliases": [
-        "DeepMind"
-      ],
-      "definition": "Google 与 DeepMind 的 Gemini 模型、Veo 视频生成、前沿研究与各条产品线的 AI 更新。"
+      "entityId": "innovent",
+      "definition": "信达生物的信迪利单抗等产品线、减重与自免管线，以及商业化与授权合作。"
     },
     {
-      "slug": "deepseek",
-      "name": "DeepSeek",
+      "slug": "junshi",
+      "name": "君实生物",
       "group": "company",
-      "entityId": "deepseek",
-      "definition": "DeepSeek（深度求索）的模型发布、开源权重、技术报告与 API 价格变化。"
+      "entityId": "junshi",
+      "definition": "君实生物的特瑞普利单抗与后续管线进展、国际化申报和经营情况。"
     },
     {
-      "slug": "qwen",
-      "name": "千问 Qwen",
+      "slug": "cspc",
+      "name": "石药集团",
       "group": "company",
-      "entityId": "qwen",
-      "definition": "阿里千问 Qwen 系列的模型发布与开源更新，从旗舰大模型到能装进手机的小模型。"
+      "entityId": "cspc",
+      "definition": "石药集团的创新药转型、仿制药与原料药业务，以及新产品获批和集采影响。"
     },
     {
-      "slug": "kimi",
-      "name": "月之暗面 / Kimi",
+      "slug": "fosun",
+      "name": "复星医药",
       "group": "company",
-      "entityId": "kimi",
-      "aliases": ["Kimi / 月之暗面"],
-      "definition": "月之暗面的 Kimi 产品更新、K 系列开源模型与长文本技术进展。"
+      "entityId": "fosun",
+      "definition": "复星医药的产品引进与自研管线、疫苗业务、海外布局和经营动态。"
     },
     {
-      "slug": "minimax",
-      "name": "MiniMax",
+      "slug": "wuxi-apptec",
+      "name": "药明康德",
       "group": "company",
-      "entityId": "minimax",
-      "definition": "MiniMax 的 M 系列大模型、语音与多模态能力，以及开源与商业化进展。"
+      "entityId": "wuxi-apptec",
+      "definition": "药明康德的 CRO/CDMO 订单、产能建设，以及海外监管与地缘政策带来的影响。"
     },
     {
-      "slug": "zhipu",
-      "name": "智谱 GLM",
+      "slug": "wuxi-bio",
+      "name": "药明生物",
       "group": "company",
-      "entityId": "zhipu",
-      "definition": "智谱 GLM 系列模型的发布与开源更新，以及编程、推理能力和商业化进展。"
+      "entityId": "wuxi-bio",
+      "definition": "药明生物的生物药 CDMO 订单与产能、客户结构变化，以及海外监管动向。"
     },
     {
-      "slug": "xai",
-      "name": "xAI / Grok",
+      "slug": "akeso",
+      "name": "康方生物",
       "group": "company",
-      "entityId": "xai",
-      "definition": "马斯克旗下 xAI 的 Grok 模型更新、算力集群建设与 X 平台整合。"
+      "entityId": "akeso",
+      "definition": "康方生物的依沃西、卡度尼利等双抗产品的临床试验、获批与授权交易。"
     },
     {
-      "slug": "meta",
-      "name": "Meta / Llama",
+      "slug": "remegen",
+      "name": "荣昌生物",
       "group": "company",
-      "entityId": "meta",
-      "definition": "Meta 的 Llama 与 Muse 系列模型、超级智能实验室与 Meta AI 产品。"
+      "entityId": "remegen",
+      "definition": "荣昌生物的维迪西妥单抗等 ADC 产品的临床进展、获批与商业化。"
     },
     {
-      "slug": "microsoft",
-      "name": "Microsoft / Copilot",
+      "slug": "zailab",
+      "name": "再鼎医药",
       "group": "company",
-      "entityId": "microsoft",
-      "definition": "微软的 Copilot 系列产品、Azure AI 云服务，以及与 OpenAI 的合作动向。"
+      "entityId": "zailab",
+      "definition": "再鼎医药的引进产品与自研管线、肿瘤与自免领域的临床和商业化进展。"
     },
     {
-      "slug": "nvidia",
-      "name": "NVIDIA 英伟达",
+      "slug": "legend",
+      "name": "传奇生物",
       "group": "company",
-      "entityId": "nvidia",
-      "definition": "英伟达的 GPU 新品、CUDA 软件生态、机器人平台与 AI 算力供需。"
+      "entityId": "legend",
+      "definition": "传奇生物的 CAR-T 产品西达基奥仑赛的全球临床、产能与销售进展。"
     },
     {
-      "slug": "hugging-face",
-      "name": "Hugging Face",
+      "slug": "hutchmed",
+      "name": "和黄医药",
       "group": "company",
-      "entityId": "hugging-face",
-      "definition": "Hugging Face 社区的热门开源模型、数据集、工具与榜单变化。"
+      "entityId": "hutchmed",
+      "definition": "和黄医药的肿瘤小分子药物、呋喹替尼等产品的全球获批与商业化。"
     },
     {
-      "slug": "cursor",
-      "name": "Cursor",
+      "slug": "pfizer",
+      "name": "辉瑞",
       "group": "company",
-      "entityId": "cursor",
-      "definition": "Cursor（Anysphere）的编辑器与编码 Agent 更新、自研模型与定价变化。"
+      "entityId": "pfizer",
+      "definition": "辉瑞的肿瘤、疫苗与炎症管线，新冠产品退潮后的业务调整与并购动作。"
     },
     {
-      "slug": "openrouter",
-      "name": "OpenRouter",
+      "slug": "merck",
+      "name": "默沙东",
       "group": "company",
-      "entityId": "openrouter",
-      "definition": "OpenRouter 平台的新模型上架、价格变化与开发者调用量排行。"
+      "entityId": "merck",
+      "aliases": ["MSD"],
+      "definition": "默沙东的 K 药临床与适应症扩展、HPV 疫苗，以及专利到期前的管线布局。"
     },
     {
-      "slug": "agent",
-      "name": "Agent 智能体",
+      "slug": "astrazeneca",
+      "name": "阿斯利康",
+      "group": "company",
+      "entityId": "astrazeneca",
+      "definition": "阿斯利康的肿瘤、呼吸与代谢管线，ADC 布局与在中国的业务进展。"
+    },
+    {
+      "slug": "novartis",
+      "name": "诺华",
+      "group": "company",
+      "entityId": "novartis",
+      "definition": "诺华的肿瘤、自免与基因治疗管线，以及核药等新方向的进展。"
+    },
+    {
+      "slug": "roche",
+      "name": "罗氏",
+      "group": "company",
+      "entityId": "roche",
+      "definition": "罗氏的肿瘤与神经管线、诊断业务，以及在中国市场的产品与准入变化。"
+    },
+    {
+      "slug": "sanofi",
+      "name": "赛诺菲",
+      "group": "company",
+      "entityId": "sanofi",
+      "definition": "赛诺菲的自免产品达必妥、疫苗业务与研发管线调整。"
+    },
+    {
+      "slug": "gsk",
+      "name": "葛兰素史克",
+      "group": "company",
+      "entityId": "gsk",
+      "definition": "葛兰素史克的疫苗、呼吸与 HIV 管线，以及带状疱疹疫苗等产品的市场表现。"
+    },
+    {
+      "slug": "lilly",
+      "name": "礼来",
+      "group": "company",
+      "entityId": "lilly",
+      "definition": "礼来的替尔泊肽等代谢产品、阿尔茨海默病新药与肿瘤管线进展。"
+    },
+    {
+      "slug": "novo",
+      "name": "诺和诺德",
+      "group": "company",
+      "entityId": "novo",
+      "definition": "诺和诺德的司美格鲁肽系列、减重与糖尿病管线，以及产能和定价压力。"
+    },
+    {
+      "slug": "jnj",
+      "name": "强生",
+      "group": "company",
+      "entityId": "jnj",
+      "aliases": ["Janssen"],
+      "definition": "强生的肿瘤、免疫与外科器械业务，以及专利到期后的管线接续。"
+    },
+    {
+      "slug": "abbvie",
+      "name": "艾伯维",
+      "group": "company",
+      "entityId": "abbvie",
+      "definition": "艾伯维在修美乐之后的自免产品接续、肿瘤与神经管线进展。"
+    },
+    {
+      "slug": "bms",
+      "name": "百时美施贵宝",
+      "group": "company",
+      "entityId": "bms",
+      "definition": "百时美施贵宝的 O 药与肿瘤管线、并购整合和专利到期压力。"
+    },
+    {
+      "slug": "daiichi",
+      "name": "第一三共",
+      "group": "company",
+      "entityId": "daiichi",
+      "definition": "第一三共的 ADC 产品线、与阿斯利康的合作，以及全球临床与获批进展。"
+    },
+    {
+      "slug": "nmpa",
+      "name": "国家药监局",
+      "group": "company",
+      "entityId": "nmpa",
+      "definition": "国家药监局的审批决定、指导原则、征求意见稿与监管改革动向。"
+    },
+    {
+      "slug": "fda",
+      "name": "FDA",
+      "group": "company",
+      "entityId": "fda",
+      "definition": "FDA 的药品审批、加速批准与撤回、安全警示和监管政策变化。"
+    },
+    {
+      "slug": "ema",
+      "name": "EMA",
+      "group": "company",
+      "entityId": "ema",
+      "definition": "欧洲药品管理局的上市许可、安全评估与欧盟药品监管政策。"
+    },
+    {
+      "slug": "oncology",
+      "name": "肿瘤",
       "group": "field",
       "tags": [
-        "Agent"
+        "肿瘤"
       ],
-      "definition": "能自己拆解任务、调用工具、一步步把事办完的 AI 智能体：Claude Code、Manus 等应用，各家 Agent 框架与评测。"
+      "definition": "肿瘤药物与治疗进展：肺癌、乳腺癌等主要瘤种的临床数据、新靶点与联合方案。"
     },
     {
-      "slug": "coding",
-      "name": "AI 编码",
+      "slug": "autoimmune",
+      "name": "自身免疫",
       "group": "field",
       "tags": [
-        "编码"
+        "自身免疫"
       ],
-      "definition": "用 AI 写代码：编程助手、Vibe Coding、代码模型评测，以及开发方式的变化。"
+      "definition": "类风湿、银屑病、炎症性肠病等自免疾病的新药、临床结果与市场格局。"
     },
     {
-      "slug": "reasoning",
-      "name": "推理能力",
+      "slug": "neuro",
+      "name": "神经与精神",
       "group": "field",
       "tags": [
-        "推理"
+        "神经/精神"
       ],
-      "definition": "让大模型先想再答的能力：思维链、推理模型，数学与逻辑评测上的突破和争议。"
+      "definition": "阿尔茨海默病、帕金森病、抑郁症等神经精神疾病的药物研发与诊疗进展。"
     },
     {
-      "slug": "multimodal",
-      "name": "多模态",
+      "slug": "metabolic",
+      "name": "代谢与减重",
       "group": "field",
       "tags": [
-        "多模态"
+        "代谢/减重"
       ],
-      "definition": "文字之外的能力：看懂图片、图文混合理解、音视频输入输出的模型与产品进展。"
+      "definition": "糖尿病、肥胖与代谢疾病：GLP-1 类药物、联合用药和口服制剂的进展。"
     },
     {
-      "slug": "image-gen",
-      "name": "图像生成",
+      "slug": "cardiovascular",
+      "name": "心血管",
       "group": "field",
       "tags": [
-        "图像生成"
+        "心血管"
       ],
-      "definition": "AI 画图与修图：文生图模型更新、图像编辑能力与创作工具。"
+      "definition": "心血管疾病的新药、降脂与抗凝方案，以及大型结局试验的结果。"
     },
     {
-      "slug": "video",
-      "name": "AI 视频",
+      "slug": "infection-vaccine",
+      "name": "感染与疫苗",
       "group": "field",
       "tags": [
-        "视频"
+        "感染/疫苗"
       ],
-      "definition": "AI 生成和理解视频：文生视频模型、视频编辑工具，以及影视创作的新做法。"
+      "definition": "抗感染药物、疫苗研发与接种策略，以及流感、呼吸道合胞病毒等疾病的防控。"
     },
     {
-      "slug": "voice",
-      "name": "语音与音频",
+      "slug": "rare-disease",
+      "name": "罕见病",
       "group": "field",
       "tags": [
-        "语音"
+        "罕见病"
       ],
-      "definition": "AI 语音与音频：语音合成、实时语音对话、音乐生成与音频理解的模型与产品。"
+      "definition": "罕见病药物研发、孤儿药政策与患者可及性，包括基因治疗等新路径。"
     },
     {
-      "slug": "embodied",
-      "name": "具身智能",
+      "slug": "respiratory",
+      "name": "呼吸",
       "group": "field",
       "tags": [
-        "具身智能"
+        "呼吸"
       ],
-      "definition": "装进机器人身体里的 AI：人形机器人、具身基础模型，以及在真实环境里动手干活的能力。"
+      "definition": "哮喘、慢阻肺、肺纤维化等呼吸系统疾病的药物与器械进展。"
     },
     {
-      "slug": "on-device",
-      "name": "端侧 AI",
+      "slug": "ophthalmology",
+      "name": "眼科",
       "group": "field",
       "tags": [
-        "端侧"
+        "眼科"
       ],
-      "definition": "直接跑在手机、电脑等设备上的 AI：小模型、在本机运行模型的工具与端侧芯片。"
+      "definition": "眼底病、干眼症等眼科疾病的药物与器械进展。"
     },
     {
-      "slug": "open-source",
-      "name": "开源生态",
+      "slug": "cell-therapy",
+      "name": "细胞治疗",
       "group": "field",
       "tags": [
-        "开源生态",
-        "开源/仓库"
+        "细胞治疗"
       ],
-      "definition": "开放权重、能下载下来自己部署的模型，开源框架与 GitHub 上爆火的 AI 项目。"
+      "definition": "CAR-T、NK 细胞等细胞治疗的临床数据、实体瘤拓展、产能与定价问题。"
     },
     {
-      "slug": "engineering",
-      "name": "部署工程",
+      "slug": "gene-therapy",
+      "name": "基因治疗",
       "group": "field",
       "tags": [
-        "部署/工程"
+        "基因治疗"
       ],
-      "definition": "怎么把模型跑得更快更省钱：推理加速、显存与成本、服务部署与基础设施选型。"
+      "definition": "基因编辑、基因替代与 mRNA 等基因类疗法的临床进展、安全信号与商业化。"
     },
     {
-      "slug": "data-training",
-      "name": "数据与训练",
+      "slug": "adc",
+      "name": "ADC",
       "group": "field",
       "tags": [
-        "数据/训练"
+        "ADC"
       ],
-      "definition": "大模型是怎么练出来的：数据集构建、合成数据、预训练与后训练方法、算力与训练成本。"
+      "definition": "抗体偶联药物的靶点、载荷与连接子创新，以及临床数据和授权交易。"
     },
     {
-      "slug": "safety",
-      "name": "安全对齐",
+      "slug": "bispecific",
+      "name": "双抗与多抗",
       "group": "field",
       "tags": [
-        "安全/对齐"
+        "双抗/多抗"
       ],
-      "definition": "让 AI 可控、可信、不被滥用：越狱与防御、模型行为研究、安全评测与治理框架。"
+      "definition": "双特异性与多特异性抗体的设计、临床数据和产业化进展。"
     },
     {
-      "slug": "mcp",
-      "name": "MCP 与工具调用",
+      "slug": "glp1",
+      "name": "GLP-1",
       "group": "field",
       "tags": [
-        "MCP/工具调用"
+        "GLP-1",
+        "代谢/减重"
       ],
-      "definition": "让 AI 连上外部软件和数据：MCP 协议、function calling 工具调用与各类工具集成。"
+      "definition": "GLP-1 及多靶点激动剂的降糖减重数据、口服化、适应症拓展与竞争格局。"
     },
     {
-      "slug": "model-releases",
-      "name": "模型发布",
+      "slug": "small-molecule",
+      "name": "小分子",
+      "group": "field",
+      "tags": [
+        "小分子"
+      ],
+      "definition": "小分子创新药的设计与临床进展，包括难成药靶点的突破与仿制竞争。"
+    },
+    {
+      "slug": "biosimilar",
+      "name": "生物类似药",
+      "group": "field",
+      "tags": [
+        "生物类似药"
+      ],
+      "definition": "生物类似药的获批、集采与替代使用，以及原研药的价格与专利应对。"
+    },
+    {
+      "slug": "tcm",
+      "name": "中药",
+      "group": "field",
+      "tags": [
+        "中药"
+      ],
+      "definition": "中药创新药、经典名方与中成药集采的政策和审评进展。"
+    },
+    {
+      "slug": "ai-pharma",
+      "name": "AI 制药",
+      "group": "field",
+      "tags": [
+        "AI 制药"
+      ],
+      "definition": "用 AI 做药物发现与临床开发的进展，以及真正落地到管线的合作与成果。"
+    },
+    {
+      "slug": "approvals",
+      "name": "新药获批",
       "group": "genre",
       "tags": [
-        "模型发布"
+        "新药获批"
       ],
-      "definition": "各家新模型的发布、开源与迭代：旗舰更新、开源权重放出、能力与价格变化。"
+      "definition": "国内外新药、新适应症的获批与上市申请进展，包括优先审评与附条件批准。"
     },
     {
-      "slug": "product-updates",
-      "name": "产品更新",
+      "slug": "clinical-data",
+      "name": "临床结果",
       "group": "genre",
       "tags": [
-        "产品更新"
+        "临床结果"
       ],
-      "definition": "AI 产品与应用的功能上新、改版与商业化——谁家的产品变强了、变贵了、能用了。"
-    },
-    {
-      "slug": "papers",
-      "name": "论文研究",
-      "group": "genre",
-      "tags": [
-        "论文/研究"
-      ],
-      "definition": "值得读的 AI 论文与研究成果：架构创新、训练方法、能力测量与理论进展。"
-    },
-    {
-      "slug": "benchmarks",
-      "name": "评测基准",
-      "group": "genre",
-      "tags": [
-        "评测/基准"
-      ],
-      "definition": "模型到底谁更强：Benchmark 评测成绩、评测方法的争议与排行榜变化。"
-    },
-    {
-      "slug": "tutorials",
-      "name": "教程实践",
-      "group": "genre",
-      "tags": [
-        "教程/实践"
-      ],
-      "definition": "拿来就能用的实操内容：提示词技巧、工作流搭建、工具用法与踩坑经验。"
-    },
-    {
-      "slug": "opinions",
-      "name": "大佬观点",
-      "group": "genre",
-      "tags": [
-        "大佬观点"
-      ],
-      "definition": "行业关键人物在想什么：创始人访谈、研究者论战与投资人判断。"
-    },
-    {
-      "slug": "trends",
-      "name": "现象与趋势",
-      "group": "genre",
-      "tags": [
-        "现象/趋势"
-      ],
-      "definition": "AI 正在改变什么：大家怎么用 AI、新能力的出现、对社会与市场格局的影响。"
-    },
-    {
-      "slug": "industry",
-      "name": "行业动态",
-      "group": "genre",
-      "tags": [
-        "行业动态"
-      ],
-      "definition": "AI 圈的商业大事：融资并购、人事变动、合作与竞争、政策与市场变化。"
+      "definition": "关键临床试验的数据读出：主要终点、样本量、风险比与安全性。"
     },
     {
       "slug": "policy",
@@ -332,7 +411,70 @@
       "tags": [
         "政策/监管"
       ],
-      "definition": "AI 相关的政策法规与政府监管：立法进展、出口管制与全球治理。"
+      "definition": "药监、医保与卫健部门的法规、指导原则、征求意见稿和监管改革。"
+    },
+    {
+      "slug": "insurance",
+      "name": "医保与集采",
+      "group": "genre",
+      "tags": [
+        "医保/集采"
+      ],
+      "definition": "医保目录调整、谈判降价、带量采购与支付方式改革对药企和患者的影响。"
+    },
+    {
+      "slug": "business",
+      "name": "企业动态",
+      "group": "genre",
+      "tags": [
+        "企业动态"
+      ],
+      "definition": "药企的经营、产能、人事与商业化进展，以及商业化团队与渠道变化。"
+    },
+    {
+      "slug": "deals",
+      "name": "融资并购",
+      "group": "genre",
+      "tags": [
+        "融资/并购"
+      ],
+      "definition": "融资、并购、BD 授权与出海交易，包括首付款、里程碑和权益范围。"
+    },
+    {
+      "slug": "devices",
+      "name": "器械与产品",
+      "group": "genre",
+      "tags": [
+        "器械/产品"
+      ],
+      "definition": "医疗器械、IVD 诊断与数字医疗的产品获批、召回和落地应用。"
+    },
+    {
+      "slug": "guidelines",
+      "name": "指南共识",
+      "group": "genre",
+      "tags": [
+        "指南/共识"
+      ],
+      "definition": "诊疗指南、专家共识与临床路径的更新，以及推荐意见的依据和变化。"
+    },
+    {
+      "slug": "safety",
+      "name": "安全与药物警戒",
+      "group": "genre",
+      "tags": [
+        "安全性/药物警戒"
+      ],
+      "definition": "药物不良反应、黑框警告、召回与撤市，以及药物警戒体系的进展。"
+    },
+    {
+      "slug": "opinions",
+      "name": "观点与访谈",
+      "group": "genre",
+      "tags": [
+        "观点/访谈"
+      ],
+      "definition": "行业关键人物的判断：研发负责人、临床专家、监管人士与投资人的访谈和评论。"
     }
   ]
 }
